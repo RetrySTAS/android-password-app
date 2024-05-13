@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111111"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonGenHistory"
+        android:layout_width="80dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#abebc6"
+        android:fontFamily="@font/montserrat"
+        android:text=">"
+        android:textColor="#111"
+        android:textSize="20dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordGenText" />
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="317dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat"
+        android:text="PASSWORD APP"
+        android:textColor="#adedc6"
+        android:textSize="47dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textInputCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:fontFamily="@font/montserrat"
+        android:inputType="text"
+        android:hint="Введите пароль"
+        android:text=""
+        android:textColor="#8d9a92"
+        android:textColorHint="#8d9a92"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+    <TextView
+        android:id="@+id/passwordCheckText"
+        android:layout_width="396dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat"
+        android:text=""
+        android:textColor="#8d9a92"
+        android:textIsSelectable="true"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputCheck" />
+
+    <Button
+        android:id="@+id/buttonCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#abebc6"
+        android:fontFamily="@font/montserrat"
+        android:hint="Введите пароль"
+        android:text="Проверить пароль"
+        android:textColor="#111"
+        android:textSize="20dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordCheckText" />
+
+    <TextView
+        android:id="@+id/passwordGenTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/montserrat"
+        android:text="ваш пароль:"
+        android:textColor="#8d9a92"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCheck" />
+
+    <TextView
+        android:id="@+id/passwordGenText"
+        android:layout_width="272dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/montserrat"
+        android:text=""
+        android:textColor="#8d9a92"
+        android:textIsSelectable="true"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordGenTitle" />
+
+    <Button
+        android:id="@+id/buttonGen"
+        android:layout_width="213dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#abebc6"
+        android:fontFamily="@font/montserrat"
+        android:text="Сгенирировать пароль"
+        android:textColor="#111"
+        android:textSize="20dp"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordGenText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
